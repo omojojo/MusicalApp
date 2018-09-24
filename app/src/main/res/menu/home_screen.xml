@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/list"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_search"
+                android:orderInCategory="100"
+                android:icon="@android:drawable/ic_search_category_default"
+                android:title="@string/action_search"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/action_library"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_library"
+                android:title="@string/libraryItem"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_videos"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_music_video_black_24dp"
+                android:title="@string/videosItem"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+
+</menu>
